@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Integer Calculator 2023</h1>
+    <div class="calcContainer">
+      <div class="screen"></div>
+      <div class="buttonContainer">
+        <div class="rowOne">
+          <div class="button number" onclick="uploadToScreen('7')">7</div>
+          <div class="button number" onclick="uploadToScreen('4')">4</div>
+          <div class="button number" onclick="uploadToScreen('1')">1</div>
+          <div class="button number" onclick="uploadToScreen('0')">0</div>
+        </div>
+        <div class="rowTwo">
+          <div class="button number" onclick="uploadToScreen('8')">8</div>
+          <div class="button number" onclick="uploadToScreen('5')">5</div>
+          <div class="button number" onclick="uploadToScreen('2')">2</div>
+          <div class="button number" onclick="clearScreen()">C</div>
+        </div>
+        <div class="rowThree">
+          <div class="button number" onclick="uploadToScreen('9')">9</div>
+          <div class="button number" onclick="uploadToScreen('6')">6</div>
+          <div class="button number" onclick="uploadToScreen('3')">3</div>
+          <div class="button operator" onclick="uploadToScreen('+')">+</div>
+        </div>
+        <div class="rowFour">
+          <div class="button operator" onclick="uploadToScreen('/')">/</div>
+          <div class="button operator" onclick="uploadToScreen('-')">-</div>
+          <div class="button operator" onclick="uploadToScreen('*')">*</div>
+          <div class="button equals">=</div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
