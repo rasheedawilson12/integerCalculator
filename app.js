@@ -35,4 +35,27 @@ const splitInput = () => {
   let input = screen.textContent;
 
   console.log(input);
+
+  //   split into 2 containers
+  if (input.includes("+")) {
+    let solve = input.split("+");
+    console.log("input:", solve);
+    calculateTerms(solve[0], solve[1], "+");
+  } else if (input.includes("-")) {
+    let solve = input.split("-");
+    console.log("input:", solve);
+    calculateTerms(solve[0], solve[1], "-");
+  } else if (input.includes("*")) {
+    let solve = input.split("*");
+    console.log("input:", solve);
+    calculateTerms(solve[0], solve[1], "*");
+  } else if (input.includes("/")) {
+    let solve = input.split("/");
+    console.log("input:", solve);
+    calculateTerms(solve[0], solve[1], "/");
+  } else {
+    alert("ERROR!");
+  }
+
+  //
 };
